@@ -47,7 +47,7 @@ SO first we are going to create a virtual machine and name it osTicket-VM make s
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-On the RDP we download the file and extract it ontop the desktop. When that is done we are going to enable IIS(Internet Information System).This is done by opening the control panel and clicking on unistall a program on your left you'll see turn windows features on and off click on it and scroll till you see IIS. The dependency we need is the CGI found in world wide web -> application development and enable that too. 
+On the RDP we download the file and extract it ontop the desktop. When that is done we are going to enable IIS(Internet Information System).This is done by opening the control panel and clicking on unistall a program on your left you'll see turn windows features on and off click on it and scroll till you see IIS. The dependency we need is the CGI found in world wide web -> application development and enable that too. This whole set is to show the default webpage for the iis that wasn't enabled beforee osTicket folder we going to install PHP manger for the iis and also the rewrite module and create the directory C:/PHP we then extract the php-7.3.8-nts-Win32-VC15-x86 into the newly created PHP folder.VC_redist.x86 is then installed as its part of the package
 </p>
 <br />
 
@@ -55,6 +55,6 @@ On the RDP we download the file and extract it ontop the desktop. When that is d
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+From the osTicket folder we going to install PHP manger for the iis and also the rewrite module and create the directory C:/PHP we then extract the php-7.3.8-nts-Win32-VC15-x86 into the newly created PHP folder
 </p>
 <br />
