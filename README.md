@@ -47,7 +47,7 @@ SO first we are going to create a virtual machine and name it osTicket-VM make s
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-On the RDP we download the file and extract it ontop the desktop. When that is done we are going to enable IIS(Internet Information System).This is done by opening the control panel and clicking on unistall a program on your left you'll see turn windows features on and off click on it and scroll till you see IIS. The dependency we need is the CGI found in world wide web -> application development and enable that too. This whole set is to show the default webpage for the iis that wasn't enabled beforee osTicket folder we going to install PHP manger for the iis and also the rewrite module and create the directory C:/PHP we then extract the php-7.3.8-nts-Win32-VC15-x86 into the newly created PHP folder.VC_redist.x86 is then installed as its part of the package
+On the RDP we download the file and extract it ontop the desktop. When that is done we are going to enable IIS(Internet Information System).This is done by opening the control panel and clicking on unistall a program on your left you'll see turn windows features on and off click on it and scroll till you see IIS. The dependency we need is the CGI found in world wide web -> application development and enable that too. This whole set is to show the default webpage for the iis that wasn't enabled beforee osTicket folder we going to install PHP manger for the iis and also the rewrite module and create the directory C:/PHP we then extract the php-7.3.8-nts-Win32-VC15-x86 into the newly created PHP folder.VC_redist.x86 is then installed as its part of the package followed ny sql setting standard and user and passwords to root just for the sake of the lab.
 </p>
 <br />
 
@@ -55,6 +55,7 @@ On the RDP we download the file and extract it ontop the desktop. When that is d
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-From the osTicket folder we going to install PHP manger for the iis and also the rewrite module and create the directory C:/PHP we then extract the php-7.3.8-nts-Win32-VC15-x86 into the newly created PHP folder
+Now we need to tell IIS where PHP is installed so it can run PHP scripts.Inside IIS, click on your computer name in the left-hand panel, then open PHP Manager.
+Click “Register new PHP version,” and browse to the PHP we created earlier in the c:/drive.After making that change, we’ll restart IIS to make sure everything updates.In IIS, click your server name again, then on the right side click Stop, and then Start.This refreshes the web server.
 </p>
 <br />
