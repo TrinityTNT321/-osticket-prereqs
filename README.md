@@ -20,21 +20,26 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Windows 10</b> (21H2)
 
-<h2>List of Prerequisites</h2>
+<h2>What Are We Going To Do?</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Setup a virtual machine in Azure
+- Install osTicket requirements
+- Install osTIcket itself
+  
 
 <h2>Installation Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/13tUFgP.png" height="25%" width="25%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/briGOzl.png" height="25%" width="25%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/5Iu6mBj.png" height="25%" width="25%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/vrYWmcw.png" height="25%" width="25%" alt="Disk Sanitization Steps"/>
+
+
+  
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+SO first we are going to create a virtual machine and name it osTicket-VM make sure you have your reasource group selected and next your zone. For image we are using windows 11 pro and the size its compatible with.(I Choose zone two cause its compatable with the size I needed which was the 2vcpus and 8GB). Create your username and passwords.(Dont forget to note them down somewhere, you will need them to login to your remote desktop). Click next twice and you will land on networking create a network and name it them press review and create. There you have it you have created a virtual machine. You are going to login to your virtual machine using the public ip address of your virtual machine and the username and password that you created earlier.
 </p>
 <br />
 
