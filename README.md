@@ -47,7 +47,7 @@ SO first we are going to create a virtual machine and name it osTicket-VM make s
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-On the RDP we download the file and extract it ontop the desktop. When that is done we are going to enable IIS(Internet Information System)
+On the RDP we download the file and extract it ontop the desktop. When that is done we are going to enable IIS(Internet Information System).This is done by opening the control panel and clicking on unistall a program on your left you'll see turn windows features on and off click on it and scroll till you see IIS. The dependency we need is the CGI found in world wide web -> application development and enable that too. 
 </p>
 <br />
 
