@@ -1,4 +1,4 @@
-<p align="center">
+ <p align="center">
   <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo" width="300"/>
 </p>
 
@@ -43,17 +43,13 @@ Under **Networking**, create a new Virtual Network, then click **Review + Create
 Once deployed, connect to your VM via **Remote Desktop (RDP)** using its public IP and credentials.
 
 <p align="center">
-  <img src="https://imgur.com/13tUFgP.png" width="23%" alt="Azure VM Setup 1"/>
-  <img src="https://imgur.com/briGOzl.png" width="23%" alt="Azure VM Setup 2"/>
-  <img src="https://imgur.com/5Iu6mBj.png" width="23%" alt="Azure VM Setup 3"/>
-  <img src="https://imgur.com/vrYWmcw.png" width="23%" alt="Azure VM Setup 4"/>
+  <img src="https://imgur.com/13tUFgP.png" width="25%" alt="Azure VM Setup 1"/>
+  <img src="https://imgur.com/briGOzl.png" width="25%" alt="Azure VM Setup 2"/>
+  <img src="https://imgur.com/5Iu6mBj.png" width="25%" alt="Azure VM Setup 3"/>
+  <img src="https://imgur.com/vrYWmcw.png" width="25%" alt="Azure VM Setup 4"/>
 </p>
 
 ---
-
-<p align="center">
-  <img src="https://i.imgur.com/DJmEXEB.png" width="80%" alt="IIS Setup"/>
-</p>
 
 ### 2️⃣ Enable IIS and Required Components
 Inside your VM:
@@ -68,6 +64,13 @@ Inside your VM:
 
 Then create a directory:
 Extract `php-7.3.8-nts-Win32-VC15-x86` into that folder.
+<p align="center">
+  <img src="https://imgur.com/oDH5VKd.png" width="25%" alt="Azure VM Setup 1"/>
+  <img src="https://imgur.com/CTN4Wl7.png" width="25%" alt="Azure VM Setup 2"/>
+  <img src="https://imgur.com/gZohraa.png" width="25%" alt="Azure VM Setup 3"/>
+  <img src="https://imgur.com/JetImEH.png" width="25%" alt="Azure VM Setup 4"/>
+</p>
+
 
 ---
 
