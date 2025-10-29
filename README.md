@@ -1,61 +1,171 @@
 <p align="center">
-<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
+  <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo" width="300"/>
 </p>
 
-<h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
+<h1 align="center">osTicket – Prerequisites and Installation</h1>
 
+This documentation outlines the prerequisites, environment configuration, and step-by-step installation process of the open-source help desk ticketing system **osTicket v1.15.8**, deployed on a Windows IIS server using Microsoft Azure Virtual Machines, PHP, and MySQL.
 
-<h2>Video Demonstration</h2>
+---
 
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
+## 🧰 Environments and Technologies Used
+- **Microsoft Azure** – Virtual Machines / Compute  
+- **Remote Desktop (RDP)**  
+- **Internet Information Services (IIS)**  
+- **PHP v7.3.8**  
+- **MySQL / HeidiSQL**
 
-<h2>Environments and Technologies Used</h2>
+---
 
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
-- Internet Information Services (IIS)
+## 💻 Operating System Used
+- **Windows 10 (21H2)**  
 
-<h2>Operating Systems Used </h2>
+---
 
-- Windows 10</b> (21H2)
+## 🧾 Project Overview
+This project demonstrates the end-to-end process of setting up a cloud-hosted help desk system.  
+You will:
+- Deploy a **Virtual Machine** in **Microsoft Azure**
+- Configure **IIS**, **PHP**, and **MySQL**
+- Install and secure **osTicket v1.15.8**
 
-<h2>What Are We Going To Do?</h2>
+---
 
-- Setup a virtual machine in Azure
-- Install osTicket requirements
-- Install osTIcket itself
-  
+## ⚙️ Installation Steps
 
-<h2>Installation Steps</h2>
+### 1️⃣ Create and Configure the Virtual Machine
+In **Microsoft Azure**, create a new **Virtual Machine (VM)** named `osTicket-VM`.  
+Select the appropriate **resource group**, region, and use **Windows 11 Pro** as the image.  
+Choose a size compatible with your lab requirements (e.g., 2 vCPUs and 8 GB RAM).  
+Create a **username** and **password** (record these for RDP access).  
 
-<p>
-<img src="https://imgur.com/13tUFgP.png" height="25%" width="25%" alt="Disk Sanitization Steps"/>
-<img src="https://imgur.com/briGOzl.png" height="25%" width="25%" alt="Disk Sanitization Steps"/>
-<img src="https://imgur.com/5Iu6mBj.png" height="25%" width="25%" alt="Disk Sanitization Steps"/>
-<img src="https://imgur.com/vrYWmcw.png" height="25%" width="25%" alt="Disk Sanitization Steps"/>
+Under **Networking**, create a new Virtual Network, then click **Review + Create**.  
+Once deployed, connect to your VM via **Remote Desktop (RDP)** using its public IP and credentials.
 
-
-  
+<p align="center">
+  <img src="https://imgur.com/13tUFgP.png" width="23%" alt="Azure VM Setup 1"/>
+  <img src="https://imgur.com/briGOzl.png" width="23%" alt="Azure VM Setup 2"/>
+  <img src="https://imgur.com/5Iu6mBj.png" width="23%" alt="Azure VM Setup 3"/>
+  <img src="https://imgur.com/vrYWmcw.png" width="23%" alt="Azure VM Setup 4"/>
 </p>
-<p>
-SO first we are going to create a virtual machine and name it osTicket-VM make sure you have your reasource group selected and next your zone. For image we are using windows 11 pro and the size its compatible with.(I Choose zone two cause its compatable with the size I needed which was the 2vcpus and 8GB). Create your username and passwords.(Dont forget to note them down somewhere, you will need them to login to your remote desktop). Click next twice and you will land on networking create a network and name it them press review and create. There you have it you have created a virtual machine. You are going to login to your virtual machine using the public ip address of your virtual machine and the username and password that you created earlier.
-</p>
-<br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-On the RDP we download the file and extract it ontop the desktop. When that is done we are going to enable IIS(Internet Information System).This is done by opening the control panel and clicking on unistall a program on your left you'll see turn windows features on and off click on it and scroll till you see IIS. The dependency we need is the CGI found in world wide web -> application development and enable that too. This whole set is to show the default webpage for the iis that wasn't enabled beforee osTicket folder we going to install PHP manger for the iis and also the rewrite module and create the directory C:/PHP we then extract the php-7.3.8-nts-Win32-VC15-x86 into the newly created PHP folder.VC_redist.x86 is then installed as its part of the package followed ny sql setting standard and user and passwords to root just for the sake of the lab.
-</p>
-<br />
+---
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p align="center">
+  <img src="https://i.imgur.com/DJmEXEB.png" width="80%" alt="IIS Setup"/>
 </p>
-<p>
-Now we need to tell IIS where PHP is installed so it can run PHP scripts.Inside IIS, click on your computer name in the left-hand panel, then open PHP Manager.
-Click “Register new PHP version,” and browse to the PHP we created earlier in the c:/drive.After making that change, we’ll restart IIS to make sure everything updates.In IIS, click your server name again, then on the right side click Stop, and then Start.This refreshes the web server.
-</p>
-<br />
+
+### 2️⃣ Enable IIS and Required Components
+Inside your VM:
+1. Open **Control Panel → Programs → Turn Windows features on or off**
+2. Enable **Internet Information Services (IIS)**
+3. Under **World Wide Web Services → Application Development Features**, check **CGI**
+4. Install:
+   - **PHP Manager for IIS**
+   - **URL Rewrite Module**
+   - **VC_redist.x86**
+   - **MySQL** (set username/password as `root`)
+
+Then create a directory:
+Extract `php-7.3.8-nts-Win32-VC15-x86` into that folder.
+
+---
+
+### 3️⃣ Register PHP in IIS
+In IIS:
+1. Click your **computer name** on the left panel  
+2. Open **PHP Manager**
+3. Select **Register new PHP version**  
+4. Browse to:
+Restart IIS (Stop → Start) to apply changes.
+
+---
+
+## 🧩 Installing osTicket v1.15.8
+
+### 1️⃣ Prepare the osTicket Files
+Extract `osTicket-v1.15.8.zip` from the installation package.  
+Copy the **upload** folder to:
+Rename it to:
+This opens the osTicket setup page in your browser.  
+If PHP extensions are missing, proceed to enable them.
+
+---
+
+### 3️⃣ Enable Required PHP Extensions
+From IIS → **PHP Manager** → **Enable or disable an extension**, enable:
+- `php_imap.dll`
+- `php_intl.dll`
+- `php_opcache.dll`
+
+Refresh the osTicket setup page to verify that all extensions are enabled.
+
+---
+
+### 4️⃣ Configure `ost-config.php`
+Rename:
+Adjust permissions:
+1. Right-click → **Properties → Security**
+2. Disable inheritance → Remove all entries
+3. Add new permission: **Everyone → Full Control**
+
+---
+
+### 5️⃣ Web-Based Configuration
+In your browser, click **Continue** and configure:
+- **Helpdesk Name:** Any desired name  
+- **Default Email:** Address that receives user tickets
+
+---
+
+## 🗄️ Database Setup Using HeidiSQL
+
+Install **HeidiSQL** and open a new session:
+Connect and create a new database named:
+
+In the osTicket setup form, enter:
+- **MySQL Database:** osTicket  
+- **MySQL Username:** root  
+- **MySQL Password:** root  
+Click **Install Now!** to complete setup.
+
+---
+
+## 🌐 Accessing osTicket
+
+After installation:
+- **Admin Panel:**  
+  [http://localhost/osTicket/scp/login.php](http://localhost/osTicket/scp/login.php)
+- **End-User Portal:**  
+  [http://localhost/osTicket/](http://localhost/osTicket/)
+
+---
+
+→ Set to **Read-only**
+
+Your osTicket environment is now fully installed and secured.
+
+---
+
+## 🧠 System Architecture Overview
+
+Below is a simplified architecture showing how osTicket components interact within the environment.
+
+```plaintext
++---------------------------------------------------+
+|                    End Users                      |
+|      (Submit tickets via Web Portal / Email)      |
++-----------------------------+---------------------+
+                           |
+                           v
++---------------------------------------------------+
+|                  IIS Web Server                   |
+|  Hosts osTicket PHP application and handles HTTP  |
++---------------------------------------------------+
+                           |
+                           v
++-------------------+     +-------------------------+
+|     PHP Engine    | --> |     MySQL Database      |
+|  Executes scripts |     | Stores ticket data,     |
+|  and web logic    |     | users, and settings     |
++-------------------+     +-------------------------+
