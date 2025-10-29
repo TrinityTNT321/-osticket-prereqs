@@ -81,6 +81,9 @@ In IIS:
 3. Select **Register new PHP version**  
 4. Browse to:
 Restart IIS (Stop → Start) to apply changes.
+<p align="center">
+  <img src="https://imgur.com/1QSIiRO.png" width="25%" alt="Azure VM Setup 1"/>
+ </p>
 
 ---
 
@@ -92,6 +95,10 @@ Copy the **upload** folder to:
 Rename it to:
 This opens the osTicket setup page in your browser.  
 If PHP extensions are missing, proceed to enable them.
+<p align="center">
+  <img src="https://imgur.com/Rsdrgrw.png" width="25%" alt="Azure VM Setup 1"/>
+ </p>
+
 
 ---
 
