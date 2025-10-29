@@ -82,8 +82,9 @@ In IIS:
 4. Browse to:
 Restart IIS (Stop → Start) to apply changes.
 <p align="center">
-  <img src="https://imgur.com/1QSIiRO.png" width="25%" alt="Azure VM Setup 1"/>
- </p>
+  <img src="https://imgur.com/RZKFrMr.png" width="25%" alt="Azure VM Setup 1"/>
+  <img src="https://imgur.com/lO9FeYV.png" width="25%" alt="Azure VM Setup 2"/>
+</p>
 
 ---
 
@@ -109,7 +110,10 @@ From IIS → **PHP Manager** → **Enable or disable an extension**, enable:
 - `php_opcache.dll`
 
 Refresh the osTicket setup page to verify that all extensions are enabled.
-
+<p align="center">
+  <img src="https://imgur.com/1RZKFrMr.png" width="25%" alt="Azure VM Setup 1"/>
+  <img src="https://imgur.com/1QSIiRO.png" width="25%" alt="Azure VM Setup 2"/>
+ </p>
 ---
 
 ### 4️⃣ Configure `ost-config.php`
@@ -118,6 +122,10 @@ Adjust permissions:
 1. Right-click → **Properties → Security**
 2. Disable inheritance → Remove all entries
 3. Add new permission: **Everyone → Full Control**
+<p align="center">
+  <img src="https://imgur.com/XNLX2Lp.png" width="25%" alt="Azure VM Setup 1"/>
+  <img src="https://imgur.com/9CdNO3A.png" width="25%" alt="Azure VM Setup 2"/>
+</p>
 
 ---
 
@@ -125,6 +133,9 @@ Adjust permissions:
 In your browser, click **Continue** and configure:
 - **Helpdesk Name:** Any desired name  
 - **Default Email:** Address that receives user tickets
+<p align="center">
+  <img src="https://imgur.com/eOEyAWG.png" width="25%" alt="Azure VM Setup 1"/>
+</p>
 
 ---
 
@@ -138,6 +149,11 @@ In the osTicket setup form, enter:
 - **MySQL Username:** root  
 - **MySQL Password:** root  
 Click **Install Now!** to complete setup.
+<p align="center">
+  <img src="https://imgur.com/hQfCZQB.png" width="25%" alt="Azure VM Setup 1"/>
+  <img src="https://imgur.com/foT3J90.png" width="25%" alt="Azure VM Setup 1"/>
+
+</p>
 
 ---
 
