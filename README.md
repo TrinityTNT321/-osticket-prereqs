@@ -19,16 +19,6 @@ This documentation outlines the prerequisites, environment configuration, and st
 
 ## 💻 Operating System Used
 - **Windows 10 (21H2)**  
-
----
-
-## 🧾 Project Overview
-This project demonstrates the end-to-end process of setting up a cloud-hosted help desk system.  
-You will:
-- Deploy a **Virtual Machine** in **Microsoft Azure**
-- Configure **IIS**, **PHP**, and **MySQL**
-- Install and secure **osTicket v1.15.8**
-
 ---
 
 ## ⚙️ Installation Steps
