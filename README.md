@@ -33,10 +33,10 @@ Under **Networking**, create a new Virtual Network, then click **Review + Create
 Once deployed, connect to your VM via **Remote Desktop (RDP)** using its public IP and credentials.
 
 <p align="center">
-  <img src="https://imgur.com/13tUFgP.png" width="25%" alt="Azure VM Setup 1"/>
-  <img src="https://imgur.com/briGOzl.png" width="25%" alt="Azure VM Setup 2"/>
-  <img src="https://imgur.com/5Iu6mBj.png" width="25%" alt="Azure VM Setup 3"/>
-  <img src="https://imgur.com/vrYWmcw.png" width="25%" alt="Azure VM Setup 4"/>
+  <img src="https://imgur.com/13tUFgP.png" width="50%" alt="Azure VM Setup 1"/>
+  <img src="https://imgur.com/briGOzl.png" width="50%" alt="Azure VM Setup 2"/>
+  <img src="https://imgur.com/5Iu6mBj.png" width="50%" alt="Azure VM Setup 3"/>
+  <img src="https://imgur.com/vrYWmcw.png" width="50%" alt="Azure VM Setup 4"/>
 </p>
 
 ---
@@ -55,10 +55,10 @@ Inside your VM:
 Then create a directory:
 Extract `php-7.3.8-nts-Win32-VC15-x86` into that folder.
 <p align="center">
-  <img src="https://imgur.com/oDH5VKd.png" width="25%" alt="Azure VM Setup 1"/>
-  <img src="https://imgur.com/CTN4Wl7.png" width="25%" alt="Azure VM Setup 2"/>
-  <img src="https://imgur.com/gZohraa.png" width="25%" alt="Azure VM Setup 3"/>
-  <img src="https://imgur.com/JetImEH.png" width="25%" alt="Azure VM Setup 4"/>
+  <img src="https://imgur.com/oDH5VKd.png" width="50%" alt="Azure VM Setup 1"/>
+  <img src="https://imgur.com/CTN4Wl7.png" width="50%" alt="Azure VM Setup 2"/>
+  <img src="https://imgur.com/gZohraa.png" width="50%" alt="Azure VM Setup 3"/>
+  <img src="https://imgur.com/JetImEH.png" width="50%" alt="Azure VM Setup 4"/>
 </p>
 
 
@@ -72,8 +72,8 @@ In IIS:
 4. Browse to:
 Restart IIS (Stop → Start) to apply changes.
 <p align="center">
-  <img src="https://imgur.com/RZKFrMr.png" width="25%" alt="Azure VM Setup 1"/>
-  <img src="https://imgur.com/lO9FeYV.png" width="25%" alt="Azure VM Setup 2"/>
+  <img src="https://imgur.com/RZKFrMr.png" width="50%" alt="Azure VM Setup 1"/>
+  <img src="https://imgur.com/lO9FeYV.png" width="50%" alt="Azure VM Setup 2"/>
 </p>
 
 ---
